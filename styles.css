@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    section {
+        padding: 20px;
+    }
+    
+    section h2 {
+        margin-top: 0;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    /* Estilos específicos */
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .gallery img {
+        width: 200px;
+        margin: 10px;
+    }
+    
+    form {
+        margin-top: 20px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #555;
+    }
+
+    .carousel {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+      }
+      
+      .slide {
+        position:fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        /* animation: change-slide 10s infinite; */
+      }
+      
+      @keyframes change-slide {
+        0%, 100% { opacity: 0; } /* La opacidad es 0 al principio y al final */
+        10%, 90% { opacity: 1; } /* La opacidad es 1 en los puntos intermedios */
+        25%, 75% { z-index: 1; }
+      }
+      
+      .slide:nth-child(1) { background-image: url('/img/gabineteSucio.jpg'); }
+      .slide:nth-child(2) { background-image: url('/img/gabineteLimpio.jpg');}
+      .slide:nth-child(3) { background-image: url('/img/disipSucio.jpg'); }
+      .slide:nth-child(4) { background-image: url('/img/disipLimpio.jpg'); }
+      .slide:nth-child(5) { background-image: url('/img/PCgamer.jpeg');}
+      /* Agrega más reglas .slide para cada imagen que desees mostrar */
+      
+    
