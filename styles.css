@@ -119,4 +119,15 @@ body {
       .slide:nth-child(5) { background-image: url('/img/PCgamer.jpeg');}
       /* Agrega más reglas .slide para cada imagen que desees mostrar */
       
+          @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            text-align: center;
+        }
     
+        .container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    }
